@@ -54,43 +54,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Sample Data Rows -->
-          <tr>
-            <td>Vitamin C</td>
-            <td>Citrus fruits, strawberries, bell peppers</td>
-            <td>Water-soluble vitamin that protects against oxidative stress and supports immune function.</td>
-            <td>Cell cytoplasm, mitochondria</td>
-            <td>Skin, immune system</td>
-          </tr>
-          <tr>
-            <td>Vitamin E</td>
-            <td>Nuts, seeds, spinach</td>
-            <td>Fat-soluble antioxidant that protects cell membranes from oxidative damage.</td>
-            <td>Cell membranes</td>
-            <td>Skin, eyes</td>
-          </tr>
-          <tr>
-            <td>Beta-Carotene</td>
-            <td>Carrots, sweet potatoes, spinach</td>
-            <td>Precursor to vitamin A; scavenges free radicals and supports vision.</td>
-            <td>Cell membranes, DNA</td>
-            <td>Eyes, skin</td>
-          </tr>
-          <tr>
-            <td>Flavonoids</td>
-            <td>Tea, apples, onions</td>
-            <td>Group of polyphenolic compounds with anti-inflammatory and antioxidant properties.</td>
-            <td>Cell signaling pathways</td>
-            <td>Heart, brain</td>
-          </tr>
-          <tr>
-            <td>Lycopene</td>
-            <td>Tomatoes, watermelon, pink grapefruit</td>
-            <td>Carotenoid that protects against oxidative damage and supports heart health.</td>
-            <td>Cell membranes</td>
-            <td>Prostate, heart</td>
-          </tr>
-          <!-- Add more rows as needed -->
+          <!-- Data will be populated here -->
         </tbody>
       </table>
     </div>
@@ -98,14 +62,42 @@
 
   <!-- Bootstrap JS and Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- JavaScript for Search Functionality -->
+  <!-- JavaScript for Fetching and Displaying Data -->
   <script>
-    document.getElementById('searchInput').addEventListener('keyup', function() {
-      const filter = this.value.toLowerCase();
-      const rows = document.querySelectorAll('#antioxidantsTable tbody tr');
-      rows.forEach(row => {
-        const text = row.textContent.toLowerCase();
-        row.style.display = text.includes(filter) ? '' : 'none';
+    document.addEventListener('DOMContentLoaded', () => {
+      const tableBody = document.querySelector('#antioxidantsTable tbody');
+      const searchInput = document.getElementById('searchInput');
+
+      // Fetch data from antioxidants.json
+      fetch('antioxidants.json')
+        .then(response => response.json())
+        .then(data => {
+          // Populate table with data
+          data.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${item.name}</td>
+              <td>${item.source}</td>
+              <td>${item.description}</td>
+              <td>${item.cell_parts}</td>
+              <td>${item.organs}</td>
+            `;
+            tableBody.appendChild(row);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          tableBody.innerHTML = '<tr><td colspan="5">Failed to load data.</td></tr>';
+        });
+
+      // Search functionality
+      searchInput.addEventListener('keyup', () => {
+        const filter = searchInput.value.toLowerCase();
+        const rows = tableBody.getElementsByTagName('tr');
+        Array.from(rows).forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(filter) ? '' : 'none';
+        });
       });
     });
   </script>

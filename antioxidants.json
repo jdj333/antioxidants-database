@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Vitamin C",
+    "source": "Citrus fruits, strawberries, bell peppers",
+    "description": "Water-soluble vitamin that protects against oxidative stress and supports immune function.",
+    "cell_parts": "Cytoplasm, mitochondria",
+    "organs": "Skin, immune system"
+  },
+  {
+    "name": "Vitamin E",
+    "source": "Nuts, seeds, spinach",
+    "description": "Fat-soluble antioxidant that protects cell membranes from oxidative damage.",
+    "cell_parts": "Cell membranes",
+    "organs": "Skin, eyes"
+  },
+  {
+    "name": "Beta-Carotene",
+    "source": "Carrots, sweet potatoes, spinach",
+    "description": "Precursor to vitamin A; scavenges free radicals and supports vision.",
+    "cell_parts": "Cell membranes, DNA",
+    "organs": "Eyes, skin"
+  },
+  {
+    "name": "Lycopene",
+    "source": "Tomatoes, watermelon, pink grapefruit",
+    "description": "Carotenoid that protects against oxidative damage and supports heart health.",
+    "cell_parts": "Cell membranes",
+    "organs": "Prostate, heart"
+  },
+  {
+    "name": "Lutein",
+    "source": "Kale, spinach, corn",
+    "description": "Carotenoid that supports eye health by filtering harmful light.",
+    "cell_parts": "Retinal cells",
+    "organs": "Eyes"
+  },
+  {
+    "name": "Zeaxanthin",
+    "source": "Corn, orange peppers, egg yolks",
+    "description": "Works with lutein to protect the eyes from oxidative stress.",
+    "cell_parts": "Retinal cells",
+    "organs": "Eyes"
+  },
+  {
+    "name": "Selenium",
+    "source": "Brazil nuts, seafood, grains",
+    "description": "Trace mineral that supports antioxidant enzymes and immune function.",
+    "cell_parts": "Mitochondria",
+    "organs": "Thyroid, immune system"
+  },
+  {
+    "name": "Flavonoids",
+    "source": "Tea, apples, onions",
+    "description": "Group of polyphenolic compounds with anti-inflammatory and antioxidant properties.",
+    "cell_parts": "Cell signaling pathways",
+    "organs": "Heart, brain"
+  },
+  {
+    "name": "Anthocyanins",
+    "source": "Blueberries, blackberries, red cabbage",
+    "description": "Pigments that provide antioxidant effects and support vascular health.",
+    "cell_parts": "Endothelial cells",
+    "organs": "Heart, brain"
+  },
+  {
+    "name": "Resveratrol",
+    "source": "Red grapes, red wine, peanuts",
+    "description": "Polyphenol that supports cardiovascular health and longevity.",
+    "cell_parts": "Mitochondria, nuclei",
+    "organs": "Heart, brain"
+  },
+  {
+    "name": "Coenzyme Q10",
+    "source": "Organ meats, fatty fish, whole grains",
+    "description": "Antioxidant that supports energy production and reduces oxidative damage.",
+    "cell_parts": "Mitochondria",
+    "organs": "Heart, kidneys"
+  },
+  {
+    "name": "Glutathione",
+    "source": "Asparagus, spinach, avocados",
+    "description": "Endogenous antioxidant that protects cells from toxins and oxidative stress.",
+    "cell_parts": "Cytoplasm, mitochondria",
+    "organs": "Liver, immune system"
+  },
+  {
+    "name": "Curcumin",
+    "source": "Turmeric",
+    "description": "Active compound in turmeric with antioxidant and anti-inflammatory properties.",
+    "cell_parts": "Cell membranes, nuclei",
+    "organs": "Liver, brain"
+  },
+  {
+    "name": "Catechins",
+    "source": "Green tea, cocoa, berries",
+    "description": "Flavonoids that support cardiovascular health and reduce inflammation.",
+    "cell_parts": "Endothelial cells",
+    "organs": "Heart, brain"
+  },
+  {
+    "name": "Quercetin",
+    "source": "Apples, onions, capers",
+    "description": "Flavonoid with anti-inflammatory and antioxidant effects.",
+    "cell_parts": "Cell membranes, mitochondria",
+    "organs": "Heart, lungs"
+  },
+  {
+    "name": "Alpha-Lipoic Acid",
+    "source": "Spinach, broccoli, organ meats",
+    "description": "Antioxidant that helps regenerate other antioxidants and supports energy metabolism.",
+    "cell_parts": "Mitochondria",
+    "organs": "Liver, nervous system"
+  },
+  {
+    "name": "Astaxanthin",
+    "source": "Salmon, shrimp, microalgae",
+    "description": "Carotenoid with potent antioxidant properties, supporting skin and eye health.",
+    "cell_parts": "Cell membranes",
+    "organs": "Skin, eyes"
+  },
+  {
+    "name": "Ellagic Acid",
+    "source": "Pomegranates, raspberries, walnuts",
+    "description": "Polyphenol that may reduce oxidative stress and support cellular health.",
+    "cell_parts": "Nuclei, mitochondria",
+    "organs": "Liver, heart"
+  },
+  {
+    "name": "Melatonin",
+    "source": "Cherries, grapes, tomatoes",
+    "description": "Hormone with antioxidant properties that supports circadian rhythms and cellular protection.",
+    "cell_parts": "Mitochondria, nuclei",
+    "organs": "Brain, endocrine system"
+  },
+  {
+    "name": "Silymarin",
+    "source": "Milk thistle",
+    "description": "Flavonoid complex that supports liver health and detoxification.",
+    "cell_parts": "Hepatocytes",
+    "organs": "Liver"
+  }
+]
